@@ -1,5 +1,5 @@
 #load the data
-with open("./Inputs/input1.txt") as file:
+with open("input1.txt") as file:
     data = [int(line) for line in file.read().splitlines()]
     result = sum([el1 < el2 for el1,el2 in zip(data, data[1:])])
     #part1 - number of elements larger than the previous one
